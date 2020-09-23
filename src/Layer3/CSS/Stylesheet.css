@@ -1,0 +1,104 @@
+.background{
+    -fx-background-color: #FFFFFF;
+}
+
+.whiteButton{
+	-fx-background-color: #FFFFFF;
+    -fx-background-radius: 6;
+	-fx-border-color: #757575;
+	-fx-border-radius: 4;
+	-fx-border-width: 2;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+    -fx-font-size: 20px;
+    -jfx-disable-visual-focus: true;
+}
+
+.whiteButton:hover{
+	-fx-border-color: #121212;
+}
+
+
+.blackButton{
+    -fx-background-color: #121212;
+    -fx-background-radius: 6;
+    -fx-border-radius: 4;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+    -fx-font-size: 20px;
+    -fx-pref-width: 169;
+    -fx-pref-height: 69;
+    -jfx-disable-visual-focus: true;
+}
+
+.blackButton:hover{
+    -fx-background-color: #424242;
+}
+
+.textField {
+    -jfx-focus-color: #039bf5;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+    -fx-font-size: 20px;
+}
+
+.basicButton{
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+    -fx-font-size: 20px;
+    -fx-pref-width: 169;
+    -fx-pref-height: 69;
+    -jfx-disable-visual-focus: true;
+}
+
+.topBar{
+    -fx-background-color: linear-gradient(to right, #1565C0, #64B5F6);
+}
+
+.text{
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+}
+
+
+.userMenuButton{
+	-fx-background-color: #FFFFFF;
+    -fx-background-radius: 6;
+	-fx-border-color: #757575;
+	-fx-border-radius: 4;
+	-fx-border-width: 2;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: normal;
+    -fx-font-size: 18px;
+    -fx-pref-width: 199;
+    -fx-pref-height: 69;
+    -jfx-disable-visual-focus: true;
+}
+
+.userMenuButton:hover{
+	-fx-border-color: #121212;
+}
+
+.deleteButton{
+    -fx-background-color: #121212;
+    -fx-font: 16px "Roboto Black";
+    -jfx-disable-visual-focus: true;
+}
+
+.deleteButton:hover{
+    -fx-background-color: #424242;
+}
+
+
+.whiteButtonNoFont{
+	-fx-background-color: #FFFFFF;
+    -fx-background-radius: 6;
+	-fx-border-color: #757575;
+	-fx-border-radius: 4;
+	-fx-border-width: 2;
+    -jfx-disable-visual-focus: true;
+}
+
+.whiteButtonNoFont:hover{
+	-fx-border-color: #121212;
+}

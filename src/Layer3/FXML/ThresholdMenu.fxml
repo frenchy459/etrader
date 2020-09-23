@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Layer3.Controllers.ThresholdMenu">
+    <Text layoutX="26.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum Lent Items Over Borrowed Items" wrappingWidth="263.82896423339844">
+        <font>
+          <Font name="Roboto Medium" size="20.0" />
+        </font>
+    </Text>
+    <Text layoutX="29.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Transactions Per Week" wrappingWidth="250.82896423339844">
+        <font>
+          <Font name="Roboto Medium" size="20.0" />
+        </font>
+    </Text>
+    <Text layoutX="29.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Incomplete Transactions" wrappingWidth="227.6289520263672">
+        <font>
+          <Font name="Roboto Medium" size="20.0" />
+        </font>
+    </Text>
+    <Line endX="655.0" layoutX="129.0" layoutY="415.0" startX="-100.0" />
+    <Line endX="655.0" layoutX="126.0" layoutY="161.0" startX="-100.0" />
+    <Line endX="655.0" layoutX="128.0" layoutY="288.0" startX="-100.0" />
+    <Line endX="655.0" layoutX="128.0" layoutY="549.0" startX="-100.0" />
+    <Text fx:id="currentLentOverBorrowed" layoutX="299.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current">
+      <font>
+         <Font name="Roboto Medium" size="20.0" />
+      </font></Text>
+    <Text fx:id="currentMaxTransactions" layoutX="299.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current">
+      <font>
+         <Font name="Roboto Medium" size="20.0" />
+      </font></Text>
+    <Text fx:id="currentMaxIncompleteTransaction" layoutX="299.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current">
+      <font>
+         <Font name="Roboto Medium" size="20.0" />
+      </font></Text>
+    <Pane prefHeight="120.0" prefWidth="800.0" styleClass="topBar">
+        <JFXButton fx:id="backButton" layoutX="702.0" layoutY="18.0" onAction="#requestBack" styleClass="whiteButton"
+                   text="BACK"/>
+        <Text fill="WHITE" layoutX="23.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT THRESHOLD">
+           <font>
+               <Font name="Roboto Medium" size="32.0"/>
+           </font>
+        </Text>
+        <Text fill="WHITE" layoutX="23.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="T R A D E - P A L S">
+           <font>
+               <Font name="Roboto Black" size="18.0"/>
+           </font>
+        </Text>
+    </Pane>
+   <JFXButton fx:id="lentOverBorrowedButton" layoutX="665.0" layoutY="203.0" onAction="#requestChangeLentOverBorrowed" styleClass="whiteButton" text="CHANGE" />
+   <JFXButton fx:id="maxTransactionsButton" layoutX="665.0" layoutY="332.0" onAction="#requestChangeMaxTransaction" styleClass="whiteButton" text="CHANGE" />
+   <JFXButton fx:id="maxIncompleteTransactionButton" layoutX="665.0" layoutY="468.0" onAction="#requestChangeMaxIncompleteTransaction" styleClass="whiteButton" text="CHANGE" />
+   <JFXTextField fx:id="lentOverBorrowedInput" layoutX="412.0" layoutY="202.0" prefHeight="38.0" prefWidth="236.0" promptText="ENTER A NUMBER" styleClass="textField" />
+   <JFXTextField fx:id="maxTransactionInput" layoutX="412.0" layoutY="331.0" prefHeight="38.0" prefWidth="236.0" promptText="ENTER A NUMBER" styleClass="textField" />
+   <JFXTextField fx:id="maxIncompleteTransactionInput" layoutX="412.0" layoutY="465.0" prefHeight="38.0" prefWidth="236.0" promptText="ENTER A NUMBER" styleClass="textField" />
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="660.0" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <Label fx:id="tradeType" layoutX="33.0" layoutY="22.0" prefHeight="39.0" prefWidth="426.0" style="-fx-font: 32px &quot;Roboto Black&quot;;" text="TRADE TYPE" />
+   <Label fx:id="partnerName" layoutX="33.0" layoutY="77.0" prefHeight="39.0" prefWidth="456.0" style="-fx-font: 20px Roboto;" text="TRADING PARTNER" />
+   <JFXButton fx:id="detailsButton" layoutX="524.0" layoutY="98.0" style="-fx-font: 16px &quot;Roboto&quot;;" styleClass="whiteButtonNoFont" text="DETAILS" visible="false">
+      <font>
+         <Font name="Roboto Light" size="15.0" />
+      </font>
+   </JFXButton>
+   <JFXButton fx:id="handleTradeRequestButton" layoutX="525.0" layoutY="98.0" style="-fx-font: 16px &quot;Roboto&quot;;" styleClass="whiteButtonNoFont" text="HANDLE" visible="false">
+      <font>
+         <Font name="Roboto Light" size="15.0" />
+      </font>
+   </JFXButton>
+   <Label fx:id="transactionStatus" layoutX="33.0" layoutY="125.0" style="-fx-font: 16px &quot;Roboto Light&quot;;" text="STATUS" />
+   <Label fx:id="meetingDate" layoutX="522.0" layoutY="22.0" style="-fx-font: 16px &quot;Roboto Light&quot;;" text="MEETING DATE" />
+</AnchorPane>

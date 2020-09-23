@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="600.0" styleClass="background" stylesheets="@../CSS/Stylesheet.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Layer3.Controllers.Register">
+   <JFXButton fx:id="returnButton" layoutX="491.0" layoutY="24.0" onAction="#returnToPreviousMenu"
+              styleClass="whiteButton" stylesheets="@../CSS/Stylesheet.css" text="BACK"/>
+   <JFXButton fx:id="registerButton" layoutX="216.0" layoutY="606.0" onAction="#registerNewAccount"
+              styleClass="blackButton" stylesheets="@../CSS/Stylesheet.css" text="SIGN UP" textFill="WHITE"/>
+   <JFXTextField fx:id="userName" layoutX="72.0" layoutY="248.0" prefHeight="31.0" prefWidth="456.0"
+                 promptText="USERNAME" styleClass="textField" stylesheets="@../CSS/Stylesheet.css"/>
+   <JFXPasswordField fx:id="password" layoutX="73.0" layoutY="341.0" prefHeight="31.0" prefWidth="456.0"
+                     promptText="PASSWORD" styleClass="textField" stylesheets="@../CSS/Stylesheet.css"/>
+</AnchorPane>

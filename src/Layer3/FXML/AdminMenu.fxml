@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0"
+            prefWidth="720.0" styleClass="background" stylesheets="@../CSS/Stylesheet.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Layer3.Controllers.AdminMenu">
+   <Pane layoutY="-1.0" prefHeight="150.0" prefWidth="720.0" styleClass="topBar">
+      <Text fill="WHITE" layoutX="33.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN MENU"
+            wrappingWidth="241.14456176757812">
+         <font>
+            <Font name="Roboto Medium" size="32.0"/>
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="34.0" layoutY="41.0" size="20"/>
+      <Text fx:id="userName" fill="WHITE" layoutX="60.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="USERNAME">
+         <font>
+            <Font name="Roboto Medium" size="20.0"/>
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="530.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="T R A D E - P A L S">
+         <font>
+            <Font name="Roboto Black" size="20.0"/>
+         </font>
+      </Text>
+      <JFXButton fx:id="logOutButton" layoutX="591.0" layoutY="13.0" onAction="#requestLogOut"
+                 styleClass="whiteButton" text="LOG OUT"/>
+   </Pane>
+   <VBox layoutX="39.0" layoutY="210.0" prefHeight="718.0" prefWidth="635.0" spacing="25.0">
+      <JFXButton fx:id="newAdminButton" onAction="#controlNewAdmin" prefHeight="65.0" prefWidth="635.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="CREATE ADMIN ACCOUNT"/>
+      <JFXButton fx:id="changePasswordButton" onAction="#requestChangePassword" prefHeight="65.0" prefWidth="724.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="CHANGE PASSWORD"/>
+      <JFXButton fx:id="adminNotificationButton" onAction="#controlAdminNotification" prefHeight="65.0"
+                 prefWidth="705.0" style="-fx-font-size: 25px;" styleClass="whiteButton"
+                 text="SYSTEM NOTIFICATIONS"/>
+      <JFXButton fx:id="globalThreshButton" onAction="#controlThreshold" prefHeight="65.0" prefWidth="725.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="EDIT GLOBAL THRESHOLDS"/>
+      <JFXButton fx:id="modUsersButton" onAction="#controlAdminUsers" prefHeight="65.0" prefWidth="743.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="ADMINISTRATE BASIC USER ACCOUNTS"/>
+      <JFXButton fx:id="approveItemsButton" onAction="#controlApproveItem" prefHeight="65.0" prefWidth="755.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="APPROVE ITEMS"/>
+      <JFXButton fx:id="initializeRepos" onAction="#initializeRepos" prefHeight="65.0" prefWidth="759.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="INITIALIZE REPOS"/>
+      <JFXButton fx:id="deleteAccountButton" onAction="#requestDeleteAccount" prefHeight="65.0" prefWidth="759.0"
+                 style="-fx-font-size: 25px;" styleClass="whiteButton" text="DELETE ACCOUNT"/>
+   </VBox>
+</AnchorPane>

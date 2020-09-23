@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="720.0" styleClass="background" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Layer3.Controllers.TransactionInfoMenu">
+   <Pane layoutY="-1.0" prefHeight="149.0" prefWidth="720.0" styleClass="topBar">
+      <Text fx:id="titleText" fill="WHITE" layoutX="32.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRADE DETAILS" wrappingWidth="288.1445617675781">
+         <font>
+            <Font name="Roboto Medium" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="278.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM(S) TRADED">
+         <font>
+            <Font name="Roboto Black" size="20.0" />
+         </font>
+      </Text>
+   </Pane>
+   <VBox layoutX="19.0" layoutY="163.0" prefHeight="391.0" prefWidth="683.0" style="-fx-background-color: #FFFFFF;">
+      <effect>
+         <DropShadow color="#00000053"/>
+      </effect>
+      <ListView fx:id="itemView" prefHeight="690.0" prefWidth="683.0"/>
+   </VBox>
+   <AnchorPane layoutX="23.0" layoutY="582.0" prefHeight="339.0" prefWidth="671.0"
+               style="-fx-background-color: #FFFFFF; -fx-background-radius: 8; -fx-border-width: 1.5; -fx-border-color: #BDBDBD; -fx-border-radius: 8;">
+      <effect>
+         <DropShadow blurType="GAUSSIAN" color="#21a6ff4a"/>
+      </effect>
+      <Text fx:id="tradeTypeField" fill="#212121" layoutX="46.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="TRADE TYPE:" wrappingWidth="145.14456176757812">
+         <font>
+            <Font name="Roboto Bold" size="18.0"/>
+         </font>
+      </Text>
+      <Text fx:id="meetingLocationField" fill="#212121" layoutX="46.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="MEETING LOCATION:" wrappingWidth="196.14456176757812">
+         <font>
+            <Font name="Roboto Bold" size="18.0"/>
+         </font>
+      </Text>
+      <Text fx:id="returnLocationField" fill="#212121" layoutX="46.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="RETURN LOCATION" wrappingWidth="196.14455670118332">
+         <font>
+            <Font name="Roboto Bold" size="18.0"/>
+         </font>
+      </Text>
+      <Text fx:id="meetingTimeField" fill="#212121" layoutX="46.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="MEETING TIME:" wrappingWidth="145.14456176757812">
+         <font>
+            <Font name="Roboto Bold" size="18.0"/>
+         </font>
+      </Text>
+      <Text fx:id="returnTimeField" fill="#212121" layoutX="46.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="RETURN TIME:" wrappingWidth="196.14455670118332">
+         <font>
+            <Font name="Roboto Bold" size="18.0"/>
+         </font>
+      </Text>
+      <Label fx:id="tradeType" layoutX="263.0" layoutY="50.0" prefHeight="29.0" prefWidth="383.0"
+             style="-fx-font: 20px &quot;Roboto&quot;;" text="TYPE"/>
+      <Label fx:id="meetingPlace" layoutX="263.0" layoutY="103.0" prefHeight="29.0" prefWidth="383.0"
+             style="-fx-font: 20px &quot;Roboto&quot;;" text="PLACE"/>
+      <Label fx:id="meetingTime" layoutX="263.0" layoutY="153.0" prefHeight="29.0" prefWidth="383.0"
+             style="-fx-font: 20px &quot;Roboto&quot;;" text="TIME"/>
+      <Label fx:id="returnPlace" layoutX="263.0" layoutY="203.0" prefHeight="29.0" prefWidth="383.0"
+             style="-fx-font: 20px &quot;Roboto&quot;;" text="N/A"/>
+      <Label fx:id="returnTime" layoutX="263.0" layoutY="252.0" prefHeight="29.0" prefWidth="383.0"
+             style="-fx-font: 20px &quot;Roboto&quot;;" text="N/A"/>
+   </AnchorPane>
+</AnchorPane>

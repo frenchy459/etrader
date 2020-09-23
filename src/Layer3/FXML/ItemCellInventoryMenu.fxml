@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="660.0" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="itemImage" fitHeight="150.0" fitWidth="150.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+   <JFXButton fx:id="detailsButton" layoutX="526.0" layoutY="104.0" styleClass="whiteButton" text="DETAILS" />
+   <Text fx:id="itemStatus" layoutX="186.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS">
+      <font>
+         <Font name="Roboto Light" size="16.0" />
+      </font>
+   </Text>
+   <Text fx:id="dateAdded" layoutX="535.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE ADDED">
+      <font>
+         <Font name="Roboto Light" size="16.0" />
+      </font>
+   </Text>
+   <Label fx:id="itemTitle" layoutX="186.0" layoutY="23.0" style="-fx-font: 32px &quot;Roboto Black&quot;;" text="TITLE" />
+   <Label fx:id="itemDescription" layoutX="186.0" layoutY="73.0" prefHeight="24.0" prefWidth="290.0" style="-fx-font: 20px Roboto;" text="DESCRIPTION" />
+</AnchorPane>

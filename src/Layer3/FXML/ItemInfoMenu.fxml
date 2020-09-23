@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/Stylesheet.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Layer3.Controllers.ItemInfoMenu">
+    <ImageView fx:id="itemImage" fitHeight="250.0" fitWidth="250.0" layoutX="28.0" layoutY="159.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <Pane prefHeight="110.0" prefWidth="800.0" styleClass="topBar">
+        <Text fill="WHITE" layoutX="22.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="T R A D E - P A L S">
+            <font>
+                <Font name="Roboto Black" size="22.0"/>
+            </font>
+        </Text>
+    </Pane>
+    <Label fx:id="itemDesc" layoutX="467.0" layoutY="205.0" prefHeight="213.0" prefWidth="261.0"
+           style="-fx-font: 20px Roboto;" text="ITEM DESCRIPTION" wrapText="true"/>
+    <Label fx:id="dateAdded" layoutX="467.0" layoutY="442.0" prefHeight="19.0" prefWidth="331.0"
+           style="-fx-font: 20px &quot;Roboto Light&quot;;" text="DATE ADDED"/>
+    <Label fx:id="itemName" layoutX="467.0" layoutY="150.0" prefHeight="38.0" prefWidth="302.0"
+           style="-fx-font: 32px &quot;Roboto Black&quot;;" text="ITEM NAME"/>
+    <Text fx:id="titleField" fill="#212121" layoutX="322.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="TITLE:" wrappingWidth="145.14456176757812">
+        <font>
+          <Font name="Roboto Bold" size="18.0"/>
+        </font>
+    </Text>
+    <Text fx:id="descriptionField" fill="#212121" layoutX="322.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="DESCRIPTION:" wrappingWidth="145.14456176757812">
+        <font>
+          <Font name="Roboto Bold" size="18.0"/>
+        </font>
+    </Text>
+    <Text fx:id="dateAddedField" fill="#212121" layoutX="322.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="DATE ADDED:" wrappingWidth="145.14456176757812">
+        <font>
+          <Font name="Roboto Bold" size="18.0"/>
+        </font>
+    </Text>
+</AnchorPane>
